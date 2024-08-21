@@ -1,27 +1,78 @@
-# TaskList
+# Projet : Application de Gestion de Tâches (To-Do List)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.8.
+![](./src/assets/logo.png)
 
-## Development server
+## Objectifs
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- **Maîtriser les concepts clés d'Angular** : routage, services, injection de dépendances, et formulaires réactifs.
+- **Développer une application simple de gestion de tâches** avec des fonctionnalités d'ajout, de modification, et de marquage des tâches comme terminées.
 
-## Code scaffolding
+## Fonctionnalités
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+1. **Liste des tâches**
+   - Affiche une liste de tâches avec un bouton pour marquer une tâche comme terminée.
+   - Lien vers un formulaire pour ajouter une nouvelle tâche.
+   - Lien pour éditer une tâche existante.
 
-## Build
+2. **Ajout d'une tâche**
+   - Utiliser le composant `TaskFormComponent` pour ajouter une nouvelle tâche.
+   - Formulaire réactif avec validation (ex. : nom de la tâche requis, minimum 3 caractères).
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+3. **Modification d'une tâche**
+   - Utiliser un composant séparé `TaskEditComponent` pour modifier une tâche existante.
+   - Pré-remplir le formulaire avec les informations de la tâche à modifier.
 
-## Running unit tests
+4. ⭐️ Bonus **Suppression d'une tâche (optionnel)**
+   - Ajouter une fonctionnalité pour supprimer une tâche de la liste.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Structure du Projet
 
-## Running end-to-end tests
+Le projet est structuré comme suit :
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+- **Services** : Créer un service `TaskService` pour gérer la logique métier (ajout, modification, suppression des tâches).
+- **Routage** : Configurer le routage pour naviguer entre la liste des tâches, le formulaire d'ajout, et le formulaire de modification.
+- **Composants** :
+  - `TaskListComponent` : Affiche la liste des tâches.
+  - `TaskFormComponent` : Formulaire pour ajouter une nouvelle tâche.
+  - `TaskEditComponent` : Formulaire pour modifier une tâche existante.
 
-## Further help
+## Étapes à Suivre
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+1. **Configurer l'environnement Angular**
+   - Créez un nouveau projet Angular : `ng new todo-app`.
+
+2. **Créer le service de gestion des tâches**
+   - Créez un service `TaskService` qui contiendra la logique pour gérer les tâches (ajouter, éditer, supprimer).
+
+3. **Configurer le routage**
+   - Configurez les routes dans `app-routes.ts` pour les différentes pages (`TaskListComponent`, `TaskFormComponent`, `TaskEditComponent`).
+
+4. **Développer les composants**
+   - `TaskListComponent` : Afficher la liste des tâches avec des checkbox pour les marquer comme terminées et un boutton pour les éditer.
+   - `TaskFormComponent` : Formulaire réactif pour ajouter une nouvelle tâche.
+   - `TaskEditComponent` : Formulaire réactif séparé pour modifier une tâche existante.
+
+5. **Gérer les actions de modification**
+   - Dans `TaskEditComponent`, récupérer l'ID de la tâche depuis l'URL.
+   - Utiliser `TaskService` pour charger la tâche à éditer et pré-remplir le formulaire.
+
+6. **Tester l'application**
+   - Assurez-vous que vous pouvez ajouter des tâches, les modifier, et les marquer comme terminées.
+   - Vérifiez que la navigation entre les différentes pages fonctionne correctement.
+
+7. **Extension (optionnel)**
+   - Implémentez la suppression des tâches.
+   - Ajoutez une fonctionnalité pour filtrer les tâches (par exemple, afficher seulement les tâches non terminées).
+
+## Conseils
+
+- **Utilisez les outils de développement Angular** (CLI, devtools) pour faciliter la création des composants et services.
+- **Pensez à bien structurer votre code** : Séparez la logique métier dans les services, et la logique de présentation dans les composants.
+- ⭐️ Bonus **Validez vos formulaires** : Assurez-vous que les utilisateurs ne puissent pas soumettre un formulaire incomplet ou invalide.
+
+## Critères de Réussite
+
+- L'application doit être fonctionnelle et respecter les exigences de base.
+- Le code doit être propre et bien structuré.
+- Les formulaires doivent être réactifs
+- ⭐️ Bonus Les formulaires doivent être valider correctement les données avant soumission.
