@@ -1,6 +1,8 @@
 # Projet : Application de Gestion de Tâches (To-Do List)
 
-![](./src/assets/logo.png)
+<span><img width="300px" src="https://github.com/FlorianBx/taskList-ang-demo/blob/main/src/assets/prev1.png" />
+<img width="300px" src="https://github.com/FlorianBx/taskList-ang-demo/blob/main/src/assets/prev2.png" />
+<img width="300px" src="https://github.com/FlorianBx/taskList-ang-demo/blob/main/src/assets/prev3.png" /><span>
 
 ## Objectifs
 
