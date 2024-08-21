@@ -1,0 +1,9 @@
+<div class="task-form">
+  <form [formGroup]="taskForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="name">Task Name <span class="edit">Edit Mode</span></label>
+      <input type="text" id="name" name="name" formControlName="name" />
+    </div>
+    <button class="button" type="submit">Submit</button>
+  </form>
+</div>
