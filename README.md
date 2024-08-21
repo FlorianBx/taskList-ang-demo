@@ -1,13 +1,14 @@
 # Projet : Application de Gestion de Tâches (To-Do List)
 
-<span><img width="300px" src="https://github.com/FlorianBx/taskList-ang-demo/blob/main/src/assets/prev1.png" />
-<img width="300px" src="https://github.com/FlorianBx/taskList-ang-demo/blob/main/src/assets/prev2.png" />
-<img width="300px" src="https://github.com/FlorianBx/taskList-ang-demo/blob/main/src/assets/prev3.png" /><span>
-
 ## Objectifs
 
 - **Maîtriser les concepts clés d'Angular** : routage, services, injection de dépendances, et formulaires réactifs.
 - **Développer une application simple de gestion de tâches** avec des fonctionnalités d'ajout, de modification, et de marquage des tâches comme terminées.
+
+<span><img width="300px" src="https://github.com/FlorianBx/taskList-ang-demo/blob/main/src/assets/prev1.png" />
+<img width="300px" src="https://github.com/FlorianBx/taskList-ang-demo/blob/main/src/assets/prev2.png" />
+<img width="300px" src="https://github.com/FlorianBx/taskList-ang-demo/blob/main/src/assets/prev3.png" /><span>
+
 
 ## Fonctionnalités
 
