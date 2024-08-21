@@ -19,6 +19,10 @@ export class TaskService {
     return this.tasks;
   }
 
+  getTaskById(id: number): Task | null {
+    return this.tasks.find((task) => task.id === id) || null;
+  }
+
   addTask(task: Partial<Task>) {
     if (!task.name) {
       throw new Error('Task name is required');
@@ -27,7 +31,7 @@ export class TaskService {
     const newTask: Task = {
       id: this.tasks.length + 1,
       name: task.name,
-      completed: task.completed || false
+      completed: task.completed || false,
     };
     this.tasks.push(newTask);
   }
